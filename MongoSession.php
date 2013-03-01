@@ -387,5 +387,13 @@ class MongoSession {
             throw new Exception('Could not obtain a session lock.');
         }
 	}
+	
+	public function  _connection() {
+		return $this->_connection;
+	}
+	
+	public function  _mongo() {
+		return $this->_mongo;
+	}
 
 }
